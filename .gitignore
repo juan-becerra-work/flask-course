@@ -1,2 +1,5 @@
 flask-course-wspc.code-workspace
-bsawf-course-material.zip
+*.zip
+# bsawf3.7
+# bsawf*.*
+settings.json
