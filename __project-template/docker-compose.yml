@@ -1,0 +1,16 @@
+version: "3.4"
+
+services:
+  website:
+    build: .
+    command: >
+      gunicorn -b 0.0.0.0:8000
+        --access-logfile -
+        --reload
+        "__project-template.app:create_app()"
+    environment:
+      PYTHONUNBUFFERED: 'true'
+    volumes:
+      - '.:/__project-template'
+    ports:
+      - '8000:8000'
