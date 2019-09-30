@@ -1,5 +1,7 @@
 from flask import Flask
 
+from omnigov_cf.blueprints.page import page
+
 
 def create_app():
     """
@@ -23,13 +25,6 @@ def create_app():
     # silent=True says to Flask not to crash if file doesn't exists
     app.config.from_pyfile('settings.py', silent=True)
 
-    @app.route('/')
-    def index():
-        """
-        Render a Hello World response.
-
-        :return: Flask response
-        """
-        return app.config['HELLO']
+    app.register_blueprint(page)
 
     return app

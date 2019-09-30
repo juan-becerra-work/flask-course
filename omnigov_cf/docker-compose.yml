@@ -7,10 +7,10 @@ services:
       gunicorn -b 0.0.0.0:8000
         --access-logfile -
         --reload
-        "omnigov-cf.app:create_app()"
+        "omnigov_cf.app:create_app()"
     environment:
       PYTHONUNBUFFERED: 'true'
     volumes:
-      - '.:/omnigov-cf'
+      - '.:/omnigov_cf'
     ports:
       - '8000:8000'
