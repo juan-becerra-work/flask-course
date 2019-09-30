@@ -1,42 +1,54 @@
 {% extends 'layouts/base.html' %}
 
-{% block title %}Test your luck against the roll of the dice{% endblock %}
-{% block meta_description %}Compete against yourself and others by guessing the
-outcome of a dice roll. Win points and dominate the leaderboard.{% endblock %}
+<!-- TRANSLATE -->
+{% block title %}The centralized source for your systems connections{% endblock %}
+
+<!-- TRANSLATE -->
+{% block meta_description %}Manage and share all your connections in a secure, standarized fashion.{% endblock %}
 
 {% block body %}
-  <div class="container sm-margin-top">
-    <div class="row text-center lg-margin-bottom">
-      <h1>Feeling lucky?</h1>
-      <h3 class="text-muted">
-        Test your luck against the roll of the dice and win today
-      </h3>
+<div class="container sm-margin-top">
+  <div class="row text-center lg-margin-bottom">
+    <!-- TRANSLATE -->
+    <h1>Connection Factory</h1>
+    <!-- TRANSLATE -->
+    <h3 class="text-muted">
+      Manage and share all your connections in a secure, standarized fashion.
+    </h3>
+  </div>
+  <div class="row text-center">
+    <div class="col-lg-4">
+      <i class="fa fa-fw fa-4x fa-bullhorn text-primary"></i>
+      <!-- TRANSLATE -->
+      <h2>Navigate connections</h2>
+      <!-- TRANSLATE -->
+      <p class="text-muted">Find and search connections to your systems.</p>
+      <p>
+        <!-- TRANSLATE -->
+        <a href="#" class="btn btn-default">Navigate</a>
+      </p>
     </div>
-    <div class="row text-center">
-      <div class="col-lg-4">
-        <i class="fa fa-fw fa-4x fa-bullhorn text-primary"></i>
-        <h2>Place bets</h2>
-        <p class="text-muted">Correctly guess the dice's roll.</p>
-        <p>
-          <a href="#" class="btn btn-default">Sign up</a>
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <i class="fa fa-fw fa-4x fa-database text-primary"></i>
-        <h2>Win currency</h2>
-        <p class="text-muted">Gain coins if your guess is correct.</p>
-        <p>
-          <a href="#" class="btn btn-default">Sign up</a>
-        </p>
-      </div>
-      <div class="col-lg-4">
-        <i class="fa fa-fw fa-4x fa-trophy text-primary"></i>
-        <h2>Leaderboard</h2>
-        <p class="text-muted">Compare your results to others.</p>
-        <p>
-          <a href="#" class="btn btn-default">Sign up</a>
-        </p>
-      </div>
+    <div class="col-lg-4">
+      <i class="fa fa-fw fa-4x fa-database text-primary"></i>
+      <!-- TRANSLATE -->
+      <h2>Manage connections</h2>
+      <!-- TRANSLATE -->
+      <p class="text-muted">Add, modify or delete connections.</p>
+      <p>
+        <!-- TRANSLATE -->
+        <a href="#" class="btn btn-default">Manage</a>
+      </p>
+    </div>
+    <div class="col-lg-4">
+      <i class="fa fa-fw fa-4x fa-trophy text-primary"></i>
+      <!-- TRANSLATE -->
+      <h2>Admin dashboard</h2>
+      <p class="text-muted">Manage users and permisions.</p>
+      <p>
+        <!-- TRANSLATE -->
+        <a href="#" class="btn btn-default">Admin</a>
+      </p>
     </div>
   </div>
+</div>
 {% endblock %}
