@@ -1,6 +1,7 @@
 from flask import Flask
 
 from omnigov_cf.blueprints.page import page
+from omnigov_cf.blueprints.contact import contact
 
 
 def create_app():
@@ -26,5 +27,6 @@ def create_app():
     app.config.from_pyfile('settings.py', silent=True)
 
     app.register_blueprint(page)
+    app.register_blueprint(contact)
 
     return app
