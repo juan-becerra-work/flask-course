@@ -1,0 +1,45 @@
+.env
+venv
+*.zip
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+node_modules/
+bin/
+build/manifest.json
+develop-eggs/
+dist/
+eggs/
+parts/
+sdist/
+var/
+npm-debug.log
+.installed.cfg
+*.egg*
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.coverage
+.cache
+
+# Translations
+*.mo
+
+# Sphinx documentation
+docs/_build/
+
+# OS and editor files
+.vscode
+
+# App ignores.
+celerybeat*
+instance/settings.py

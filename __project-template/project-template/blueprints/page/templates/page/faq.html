@@ -1,0 +1,34 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}FAQs{% endblock %}
+{% block heading %}<h2>Frequently asked questions</h2>{% endblock %}
+
+{% block body %}
+
+<p>
+    These are the most frequently asked questions by our users in our <i>users forum</i> at 
+    <a href="http://{{ config.get('FORUM_URL') }}">
+      http://{{ config.get('FORUM_URL') }}
+    </a>.
+  </p>
+
+  <ul>
+      <li>
+          ¿What is the first?
+      </li>
+      <p>The first is this</p>
+      <li>
+        ¿What is the second?
+    </li>
+    <p>The second is this</p>
+    <li>
+        ¿What is the third?
+    </li>
+    <p>The third is this</p>
+    <li>
+        ¿What is the fourth?
+    </li>
+    <p>The fourth is this</p>
+</ul>
+
+{% endblock %}
