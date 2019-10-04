@@ -20,3 +20,6 @@ docker-compose rm -f
 
 *The same as above, but for running manually*
 docker rmi -f $(docker images -qf dangling=true)
+
+*Create the python packages dependencies
+pip install --editable .
